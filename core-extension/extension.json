@@ -1,0 +1,45 @@
+{
+  "displayName": "example-core-extension",
+  "name": "example-core-extension",
+  "platform": "web",
+  "version": "0.0.1",
+  "description": "Provides helpers and utilities to support auto-tagging implementation",
+  "author": {
+    "name": "Alexis Cazes"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "dataElements": [
+    {
+      "displayName": "Mapping Table",
+      "name": "mapping-table",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/dataElements/mappingTable.js",
+      "viewPath": "dataElements/mappingTable.html"
+    }
+  ],
+  "actions": [
+    {
+      "displayName": "Inject Script",
+      "name": "inject-script",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/injectScript.js",
+      "viewPath": "actions/injectScript.html"
+    }
+  ]
+}
