@@ -1,0 +1,11 @@
+{
+  "name": "example-core-extension",
+  "version": "0.0.1",
+  "description": "Adobe Launch example core extension for auto-tagging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexis Cazes",
+  "license": "ISC"
+}
