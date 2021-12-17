@@ -1,4 +1,5 @@
-'use strict';
+'use strict'
 
-// TODO: Export something that provides value to other extensions.
-module.exports = {};
+var getObjectProperty = require('../../helpers/getObjectProperty');
+
+module.exports = getObjectProperty;

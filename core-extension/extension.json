@@ -17,30 +17,55 @@
       "properties": {}
     }
   },
-  "dataElements": [
+  "dataElements": [{
+    "displayName": "Mapping Table",
+    "name": "mapping-table",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    },
+    "libPath": "src/lib/dataElements/mappingTable.js",
+    "viewPath": "dataElements/mappingTable.html"
+  }],
+  "actions": [{
+    "displayName": "Inject Script",
+    "name": "inject-script",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    },
+    "libPath": "src/lib/actions/injectScript.js",
+    "viewPath": "actions/injectScript.html"
+  }],
+  "sharedModules": [{
+      "name": "get-object-property",
+      "libPath": "src/lib/sharedModules/getObjectProperty.js"
+    },
     {
-      "displayName": "Mapping Table",
-      "name": "mapping-table",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "type": "object",
-        "properties": {}
-      },
-      "libPath": "src/lib/dataElements/mappingTable.js",
-      "viewPath": "dataElements/mappingTable.html"
-    }
-  ],
-  "actions": [
+      "name": "comparison",
+      "libPath": "src/lib/sharedModules/comparison.js"
+    },
     {
-      "displayName": "Inject Script",
-      "name": "inject-script",
-      "schema": {
-        "$schema": "http://json-schema.org/draft-04/schema#",
-        "type": "object",
-        "properties": {}
-      },
-      "libPath": "src/lib/actions/injectScript.js",
-      "viewPath": "actions/injectScript.html"
+      "name": "text-match",
+      "libPath": "src/lib/sharedModules/textMatch.js"
+    },
+    {
+      "name": "validate-variable-value",
+      "libPath": "src/lib/sharedModules/validateVariableValue.js"
+    },
+    {
+      "name": "set-object-property",
+      "libPath": "src/lib/sharedModules/setObjectProperty.js"
+    },
+    {
+      "name": "to-title-case",
+      "libPath": "src/lib/sharedModules/toTitleCase.js"
+    },
+    {
+      "name": "array-eventify",
+      "libPath": "src/lib/sharedModules/arrayEventify.js"
     }
   ]
 }
